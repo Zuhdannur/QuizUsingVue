@@ -5,10 +5,9 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Alerts from "./components/Try";
 import CardQuestion from "./components/CardQuestion";
 
 export default {

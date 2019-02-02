@@ -5,7 +5,7 @@
             <div role="tablist">
                 <b-card v-for="(item,index) in items" no-body class="mb-1">
                     <b-card-header header-tag="header" class="p-1" role="tab">
-                        <b-btn block  v-b-toggle="'accordion-'+ index" variant="info" v-on:click="setPosition(index)">{{ 'Soal Nomor ' + (index+1) }}</b-btn>
+                        <b-btn block  type="button" v-b-toggle="'accordion-'+ index" variant="info" v-on:click="setPosition(index)">{{ 'Soal Nomor ' + (index+1) }}</b-btn>
                     </b-card-header>
                     <b-collapse v-bind:id="'accordion-'+index" visible accordion="my-accordion" role="tabpanel">
                         <b-card-body>
@@ -18,7 +18,7 @@
                                     </b-form-radio-group>
                                 </b-form-group>
                             </div>
-                            <b-button variant="success" v-on:click="checkingAnswer" :disabled="btn_click ?  '':disabled">Yakin</b-button>
+                            <b-button variant="success" v-on:click="checkingAnswer" :disabled=" btn_click ?  '':disabled">Yakin</b-button>
                         </b-card-body>
                     </b-collapse>
                 </b-card>
@@ -87,19 +87,15 @@
             }
         },
         methods:{
-            showModals(){
-                this.$refs.myModalRef.show()
-            },
-            hideModals(){
-                this.$refs.myModalRef.hide()
-            },
             setPosition(i){
                this.position = i;
             },
             checkingAnswer(){
-                this.items[this.position].btn_click = !this.items[this.position].btn_click;
+                this.items[this.position].btn_click = false;
                 if(this.items[this.position].jawaban === this.items[this.position].clicked){this.score++;}
-               // console.log(this.items[this.position].jawaban);
+            },
+            cek(){
+                console.log(cek);
             },
         }
     }
