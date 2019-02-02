@@ -1,16 +1,27 @@
-# quiz
+# quiz by zuhdan nur 
+###### with Boostrap-vue
 
-## Project setup
+## Clone Dlu Project nya Ini Kalo Pake SSH 
+```
+git clone git@github.com:Zuhdannur/QuizUsingVue.git 
+```
+
+## Clone Dlu Project nya Ini Kalo Pake HTTPS 
+```
+git clone https://github.com/Zuhdannur/QuizUsingVue.git 
+```
+
+## Cara Install Projectnya 
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Menjalankan Service NPM
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Mengkompile
 ```
 npm run build
 ```
@@ -20,7 +31,7 @@ npm run build
 npm run test
 ```
 
-### Lints and fixes files
+### Perbaiki Alokasi File
 ```
 npm run lint
 ```
