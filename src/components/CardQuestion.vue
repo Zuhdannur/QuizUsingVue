@@ -19,7 +19,7 @@
                                 </b-form-group>
                                 <b-button variant="success" v-on:click="checkingAnswer">Yakin</b-button>
                             </div>
-
+                            <div v-else><p>{{ item.clicked }}</p></div>
                         </b-card-body>
                     </b-collapse>
                 </b-card>
